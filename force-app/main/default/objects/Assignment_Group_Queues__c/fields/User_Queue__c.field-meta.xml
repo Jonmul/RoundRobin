@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Queue__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>WARNING: if using a user who is also a &quot;Group Member&quot;, you may encounter issues in Round-Robin.
+If you need to use a User to represent a Queue, fill out this field.</inlineHelpText>
+    <label>User Queue (for override only)</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>AG_Queues</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
